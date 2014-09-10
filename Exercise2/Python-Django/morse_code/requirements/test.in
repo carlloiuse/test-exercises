@@ -1,0 +1,10 @@
+# Test dependencies go here.
+-r base.in
+MySQL-python
+chaussette
+eventlet
+fabric
+gevent
+greenlet
+coverage
+django-discover-runner

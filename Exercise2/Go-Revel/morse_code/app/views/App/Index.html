@@ -1,0 +1,29 @@
+{{set . "title" "Home"}}
+{{template "header.html" .}}
+
+<div class="container">
+    <form action="GET" role="form">
+        <div class="form-group">
+            <label for="id_data_in">Input</label>
+            <textarea class="form-control" id="id_data_in" name="data_in"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="id_data_out">Output</label>
+            <textarea class="form-control" id="id_data_out" name="data_out"></textarea>
+        </div>
+        <button class="btn btn-success btn-submit">Translate</button>
+    </form>
+</div> <!-- /container -->
+
+<script src="/public/main/js/morse.js"></script>
+<script type="text/javascript">
+$(function() {
+    $('.btn-submit').click(function(e) {
+        e.preventDefault();
+        var result = morse.translate($('#id_data_in').val())
+        $('#id_data_out').text(result);
+    });
+})
+</script>
+
+{{template "footer.html" .}}
