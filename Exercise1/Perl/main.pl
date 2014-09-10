@@ -6,7 +6,7 @@ use Scalar::Util 'looks_like_number';
 sub print_help {
     print "usage: main.pl [-h] list [list ...]\n\n";
     print "Combine lists of integers to produce a single list in strictly increasing order (sorted and unique).\n\n";
-    print "Usage:\npython main.py \"1,2,2,3,5,9,11\" \"2,3,3,3,6\"\n\n";
+    print "Usage:\nperl main.pl \"1,2,2,3,5,9,11\" \"2,3,3,3,6\"\n\n";
     print "positional arguments:\n  list\t\tcomma separated integer list e.g. 1,2,3,4,5\n\n";
     print "optional arguments:\n  -h, --help\tshow this help message and exit\n";
 }
