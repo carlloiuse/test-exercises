@@ -52,6 +52,7 @@ h2. Python-Django
 
 h3. Required packages
 * Python
+* Django
 * pip
 * virtualenv
 
